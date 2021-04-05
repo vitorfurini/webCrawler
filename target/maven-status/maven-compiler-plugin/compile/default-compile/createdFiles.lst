@@ -1,0 +1,4 @@
+com\axreng\backend\Main.class
+com\axreng\backend\com\axreng\backend\manager\exception\Exceptions.class
+com\axreng\backend\com\axreng\backend\manager\utils\ManagerUtils.class
+com\axreng\backend\com\axreng\backend\manager\WebCrawlerManager.class
