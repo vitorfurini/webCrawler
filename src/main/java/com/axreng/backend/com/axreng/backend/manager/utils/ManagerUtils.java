@@ -45,14 +45,13 @@ public class ManagerUtils {
         return keyword;
     }
 
-    public Integer verifyMaxResults(String maxResults) throws Exceptions {
+    public int verifyMaxResults(String maxResults) {
         int maxResults1 = maxResults == null ? -1 : Integer.parseInt(maxResults);
 
-        if (maxResults1 != 0) {
-            throw new Exceptions("Valor inválido: " + maxResults);
-        } else {
+        if(maxResults1 == 0 || maxResults1 < -1){
             return -1;
         }
+        return maxResults1;
     }
 
     public void printResults(String baseUrl, String keyword, Set<String> resultList) {

@@ -47,9 +47,5 @@ class ManagerUtilsTest {
         assertThrows(NumberFormatException.class, () -> managerUtils.verifyMaxResults(""));
     }
 
-    @Test
-    void testWhenIsTestWhenVerifyResults(){
-        assertThrows(Exceptions.class, () -> managerUtils.verifyMaxResults("1"));
-    }
 
 }
